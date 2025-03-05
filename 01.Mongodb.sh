@@ -25,7 +25,8 @@ echo " $R Error : $2 has been failed $N "
 exit 1
 else
 echo " $G $2 has been succeeded $N "
+fi
 
 cp mongo.repo /etc/yum.repos.d/mongo.repo
 
-Validate $? "Copying package"
+Validate $? "Copying Mongodb package"
