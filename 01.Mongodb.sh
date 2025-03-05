@@ -28,5 +28,4 @@ fi
 
 cp mongo.repo /etc/yum.repos.d/mongo.repo
 
-Validate $? " Copying package "
-
+Validate $? "Copying package"
