@@ -15,7 +15,7 @@ then
 echo -e " $R Error : Please run this as Root user $N"
 exit 1
 else
-echo " $G Running this with Root user $N"
+echo -e " $G Running this with Root user $N"
 fi
 
 Validate()
