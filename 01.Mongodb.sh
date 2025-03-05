@@ -30,3 +30,27 @@ fi
 cp mongo.repo /etc/yum.repos.d/mongo.repo
 
 Validate $? "Copying Mongodb package"
+
+dnf install mongodb-org -y 
+
+Validate $? "Installation of Mongodb"
+
+systemctl enable mongod
+
+Validate $? "Mongodb Enabling"
+
+systemctl start mongod
+
+Validate $? "Mongo db starting"
+
+sed -i 's/127.0.0.1/0.0.0.0/g' /etc/mongod.conf
+
+Validate $? "Remote access to MongoDB"
+
+systemctl restart mongod
+
+Validate $? "Mongo db Restarting"
+
+
+
+
