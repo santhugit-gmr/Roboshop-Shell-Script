@@ -21,10 +21,10 @@ fi
 Validate()
 if [ $1 -ne 0 ]
 then 
-echo " $R Error : $2 has been failed $N "
+echo -e " $R Error : $2 has been failed $N "
 exit 1
 else
-echo " $G $2 has been succeeded $N "
+echo -e " $G $2 has been succeeded $N "
 fi
 
 cp mongo.repo /etc/yum.repos.d/mongo.repo
