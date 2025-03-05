@@ -6,7 +6,7 @@ Y="\e[32m"
 N="\e[0m"
 
 Validate()
-if [ $1? -ne 0 ]
+if [ $1 -ne 0 ]
 then 
 echo " $R Error : $2 has been failed $N "
 exit 1
